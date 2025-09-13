@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suman Khan Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <h1 class="name">Suman Khan</h1>
+      <div class="contact">
+        <p><i class="fa-solid fa-envelope"></i> suman@example.com</p>
+        <p><i class="fa-solid fa-phone"></i> +1 123 456 7890</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-img">
+        <img src="assets/image.webp" alt="Suman Khan" />
+      </div>
+      <div class="about-text">
+        <h2>Hi, I'm <span>Suman Khan!</span></h2>
+        <p>
+          I am a junior front-end developer with strong interest in creating beautiful and responsive web applications.  
+          Currently, I’m learning and working with HTML, CSS, JavaScript, and React to sharpen my skills.  
+          I love solving problems and turning creative ideas into functional designs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <h3>HTML</h3>
+        <p>2 years experience</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <h3>CSS</h3>
+        <p>2 years experience</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <h3>JavaScript</h3>
+        <p>3 years experience</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        <h3>React</h3>
+        <p>1 year experience</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+        <h3>Node.js</h3>
+        <p>1 year experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="assets/weatherapp.png" alt="Weather App" />
+        <h3>Weather App</h3>
+        <p>A responsive weather app built with HTML, CSS, JavaScript, and OpenWeather API.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/tictactoe.png" alt="Tic Tac Toe" />
+        <h3>Tic Tac Toe</h3>
+        <p>A fun and interactive Tic Tac Toe game with HTML, CSS, and JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendations -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div class="recommendations-container" id="recommendationList">
+      <blockquote>
+        "Suman is a quick learner and passionate about web development!"  
+        <span>- Colleague</span>
+      </blockquote>
+      <blockquote>
+        "Delivered a clean and professional project on time. Highly recommend!"  
+        <span>- Client</span>
+      </blockquote>
+      <blockquote>
+        "Creative, detail-oriented, and a great problem solver."  
+        <span>- Manager</span>
+      </blockquote>
+    </div>
+
+    <!-- Add Recommendation Form -->
+    <div class="recommendation-form">
+      <h3>Leave a Recommendation</h3>
+      <textarea id="recText" placeholder="Write your recommendation here..."></textarea>
+      <input type="text" id="recName" placeholder="Your Name (optional)" />
+      <button onclick="addRecommendation()">Submit</button>
+    </div>
+    <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <p>Thank you for leaving a recommendation!</p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Suman Khan | Built with ❤️ using HTML, CSS, and JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
